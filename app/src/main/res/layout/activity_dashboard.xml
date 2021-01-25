@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/backgroundpage"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tax Calculator"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+
+            android:gravity="center_horizontal"/>
+
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_above="@+id/amountEditText"
+            android:text="Number Type: 1234"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="#9494a2"
+            android:textSize="13dp"/>
+    <EditText
+        android:id="@+id/amountEditText"
+        android:background="@drawable/editbox"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:ems="16"
+     android:layout_centerHorizontal="true"
+       android:layout_marginBottom="450dp"
+        android:maxLength="6"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:hint="Amount"
+        android:digits="0123456789."/>
+
+        <EditText
+            android:id="@+id/percentageEditText"
+            android:background="@drawable/editbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+
+            android:ems="16"
+            android:layout_centerHorizontal="true"
+           android:layout_marginTop="80dp"
+            android:maxLength="6"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:hint="Percentage"
+            android:digits="0123456789."
+            android:layout_marginBottom="6dp"/>
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+     >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/percent"
+            android:text="Percentage %"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="-75dp"
+            android:textColor="#5c5884"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textbox1"
+            android:ems="22"
+            android:layout_marginBottom="370dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:maxLength="6"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:text="SR"
+            android:textSize="13dp"
+
+ />
+
+        <TextView
+            android:id="@+id/grand_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/percent"
+            android:text="Grand Total"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="-170dp"
+
+            android:textColor="#5c5884"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/grand_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textbox1"
+            android:ems="22"
+            android:layout_centerHorizontal="true"
+         android:layout_marginTop="173dp"
+            android:maxLength="6"
+            android:ellipsize="start"
+
+            android:gravity="center_horizontal"
+            android:text="SR"
+            android:textSize="13dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

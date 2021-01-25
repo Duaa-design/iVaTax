@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculater"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/splashBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="330dp"
+        android:src="@drawable/ic_spplash"
+        tools:ignore="MissingConstraints" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:layout_marginBottom="150dp">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+          android:layout_marginBottom="80dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/aladin"
+                android:text="Welcome!"
+                android:textColor="#5e57d2"
+                android:textSize="40sp"
+
+
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/glad"
+          android:layout_below="@+id/welcome"
+                android:text="We're so glad you'r here"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+
+                android:fontFamily="@font/aladin"
+                android:textColor="#c4c3cf"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                tools:ignore="MissingConstraints" />
+        </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:layout_marginBottom="50dp">
+
+        <Button
+
+            android:id="@+id/get_started"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/glad"
+            android:layout_marginLeft="230dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/btn_pri"
+            android:text="Let's Started" />
+
+</LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
