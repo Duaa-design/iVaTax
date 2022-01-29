@@ -1,8 +1,7 @@
-# iVaTax
+# iVaTax:
 
-Android Application that will calculate your taxes 
+Android Application that will calculate your taxes
 
-
-## Toturial
+## Toturial:
 
 ![](https://j.gifs.com/K1PZnr.gif)
